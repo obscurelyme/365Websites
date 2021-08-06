@@ -4,9 +4,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>><%= htmlWebpackPlugin.options.title %></title>
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    article.wp-article {
+      padding: 16px;
+      max-width: 700px;
+    }
+    article.wp-article p {
+      white-space: pre-wrap;
+    }
+  </style>
 </head>
 <body>
-  <h1>First website ever!</h1>
+  <header>
+    <h1>365 Website Project</h1>
+  </header>
+  <main>
+    <article class="wp-article">
+      <h3>First Article</h3>
+      <p>This is my first article within my first website that I'm making on day 1.
+
+I've opted to set up a decent chunk of boilerplate for the entire repo. So I passed on a lot of
+features that could have gone into this first website, but I'm willing to take that loss on day 1
+so I can move a bit faster on day 2. I do hope that I can keep this project going for the next 364 days!
+XD
+
+    Until next time!
+            - Nico
+      </p>
+    </article>
+  </main>
+  <footer>
+    <span>&copy; 365 Website Project, 2021</span>
+  </footer>
 </body>
 </html>

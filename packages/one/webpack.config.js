@@ -3,7 +3,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = (env, argv) => {
-  const _base = base(env, { title: 'One' });
+  const _base = base(env, { title: '365 project | One' });
   return {
     ..._base,
     entry: './src/app.js',
