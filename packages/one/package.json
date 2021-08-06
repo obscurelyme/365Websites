@@ -1,0 +1,32 @@
+{
+  "name": "@365-websites/one",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "obscurelyme <nico.frozencoffee@gmail.com>",
+  "homepage": "https://github.com/obscurelyme/365Websites#readme",
+  "license": "ISC",
+  "main": "src/app.js",
+  "directories": {
+    "src": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/obscurelyme/365Websites.git"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js --env=development",
+    "build:prod": "webpack --config webpack.config.js --env=production",
+    "start": "webpack serve",
+    "pretty:check": "prettier --config ../../.prettierrc.json --check ./src",
+    "pretty:fix": "prettier --config ../../.prettierrc.json --write ./src"
+  },
+  "bugs": {
+    "url": "https://github.com/obscurelyme/365Websites/issues"
+  }
+}

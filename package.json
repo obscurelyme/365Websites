@@ -1,0 +1,30 @@
+{
+  "name": "@365-websites/root",
+  "version": "1.0.0",
+  "description": "A 365 project to make a website everyday for 1 year.",
+  "main": "index.js",
+  "repository": "git@github.com:obscurelyme/365Websites.git",
+  "author": "obscurelyme <nico.frozencoffee@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build",
+    "build:prod": "lerna run build:prod",
+    "pretty:check": "lerna run pretty:check",
+    "pretty:fix": "lerna run pretty:fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.3.2",
+    "lerna": "^4.0.0",
+    "prettier": "^2.3.2",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "private": true
+}
